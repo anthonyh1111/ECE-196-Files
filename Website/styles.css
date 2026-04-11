@@ -1,14 +1,14 @@
 :root {
-  --bg: #f4efe7;
-  --surface: rgba(255, 250, 243, 0.8);
-  --surface-strong: #fffaf2;
-  --text: #1f1d1a;
-  --muted: #6d655a;
-  --line: rgba(71, 55, 32, 0.12);
-  --accent: #c96b3b;
-  --accent-dark: #8f3f19;
-  --accent-soft: #f1d7c6;
-  --shadow: 0 20px 60px rgba(73, 49, 22, 0.12);
+  --bg: #f8eaea;
+  --surface: rgba(255, 245, 245, 0.82);
+  --surface-strong: #fff7f7;
+  --text: #2f1d20;
+  --muted: #7d5d62;
+  --line: rgba(115, 63, 73, 0.14);
+  --accent: #d77a86;
+  --accent-dark: #a54b5f;
+  --accent-soft: #f3d4d8;
+  --shadow: 0 20px 60px rgba(99, 48, 57, 0.12);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   font-family: "DM Sans", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(201, 107, 59, 0.2), transparent 28%),
-    radial-gradient(circle at top right, rgba(95, 148, 122, 0.18), transparent 24%),
-    linear-gradient(180deg, #f8f3ec 0%, #efe6da 100%);
+    radial-gradient(circle at top left, rgba(215, 122, 134, 0.24), transparent 28%),
+    radial-gradient(circle at top right, rgba(236, 176, 185, 0.2), transparent 24%),
+    linear-gradient(180deg, #fdf3f4 0%, #f5e0e3 100%);
 }
 
 body::before {
@@ -59,7 +59,7 @@ body::before {
   margin-bottom: 28px;
   border: 1px solid var(--line);
   border-radius: 22px;
-  background: rgba(255, 248, 238, 0.78);
+  background: rgba(255, 244, 245, 0.82);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
@@ -145,7 +145,7 @@ h3 {
 
 .hero-home .hero-copy {
   background:
-    linear-gradient(135deg, rgba(255, 250, 243, 0.9), rgba(253, 235, 221, 0.82)),
+    linear-gradient(135deg, rgba(255, 247, 247, 0.94), rgba(248, 221, 225, 0.84)),
     var(--surface);
 }
 
@@ -214,8 +214,8 @@ li {
 
 .button-primary {
   color: #fff8ef;
-  background: linear-gradient(135deg, #b44d1d, #d67e43);
-  box-shadow: 0 12px 24px rgba(180, 77, 29, 0.22);
+  background: linear-gradient(135deg, #bf5f6f, #e39aa4);
+  box-shadow: 0 12px 24px rgba(191, 95, 111, 0.24);
 }
 
 .button-secondary {
@@ -236,7 +236,7 @@ li {
   width: 180px;
   height: 180px;
   border-radius: 36px;
-  background: linear-gradient(180deg, rgba(201, 107, 59, 0.14), rgba(95, 148, 122, 0.2));
+  background: linear-gradient(180deg, rgba(215, 122, 134, 0.16), rgba(243, 212, 216, 0.24));
   transform: rotate(18deg);
 }
 
@@ -287,7 +287,7 @@ li {
 .timeline-item {
   padding: 20px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 249, 250, 0.68);
   border: 1px solid rgba(71, 55, 32, 0.09);
 }
 
@@ -309,7 +309,7 @@ li {
   padding: 16px 18px;
   border-left: 4px solid var(--accent);
   border-radius: 14px;
-  background: rgba(201, 107, 59, 0.08);
+  background: rgba(215, 122, 134, 0.1);
 }
 
 .solutions-grid,
@@ -322,7 +322,7 @@ li {
 .solution-card {
   padding: 22px;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 249, 250, 0.72);
   border: 1px solid rgba(71, 55, 32, 0.09);
 }
 
@@ -339,10 +339,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1.5px dashed rgba(143, 63, 25, 0.35);
+  border: 1.5px dashed rgba(165, 75, 95, 0.35);
   background:
-    linear-gradient(135deg, rgba(201, 107, 59, 0.08), rgba(95, 148, 122, 0.12)),
-    rgba(255, 255, 255, 0.48);
+    linear-gradient(135deg, rgba(215, 122, 134, 0.1), rgba(243, 212, 216, 0.18)),
+    rgba(255, 250, 251, 0.56);
   color: var(--accent-dark);
   text-align: center;
 }
