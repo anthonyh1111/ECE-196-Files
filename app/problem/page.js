@@ -12,7 +12,7 @@ export default function ProblemPage() {
           <div className="section-heading">
             <p className="section-tag">Problem Definition</p>
             <h2>
-            UCSD undergrad commuters struggle to know if student parking is available at Pangea parking structure. 
+            UCSD undergrad commuters struggle to know if student parking is available at Pangea parking structure during the afternoon time. 
             </h2>
           </div>
         </section>
@@ -23,9 +23,7 @@ export default function ProblemPage() {
             <h2>Why this matters to the team</h2>
           </div>
           <p>
-            Our team chose this issue because as we&apos;re students who park on
-            campus and we find that this is a relevant and recurring problem
-            within transportation at UCSD.
+            Anthony and Alex consistently park at Pangea parking structure and have to continuously circle around looking for open S spots, causing us to waste time or be late to class. As a last resort, we may have to park in Student-Resident spots, risking a $85 ticket. 
           </p>
         </section>
 

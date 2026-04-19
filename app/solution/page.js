@@ -12,15 +12,14 @@ const solutionActions = [
 
 const technicalAspects = [
   "A microcontroller collects occupancy data from the sensing hardware and packages it for processing.",
-  "Sensor inputs are filtered in software to reduce false triggers caused by shadows, motion, or brief obstructions.",
   "Communication hardware transfers occupancy updates from the microcontroller to a server or dashboard layer.",
-  "The software stack stores current space status and refreshes the user-facing display with near real-time data.",
+  "The software stack stores current space status and notifies users with near real-time data.",
 ];
 
 const components = [
-  "Microcontroller: ESP32, Arduino, or another embedded controller for sensor polling and communication.",
-  "Sensors or camera module: hardware that determines whether a parking space is occupied.",
-  "Communication interface: Wi-Fi, Bluetooth, or wired connection to send processed occupancy data.",
+  "Microcontroller: ESP32",
+  "Weight Sensors: Pressure pads or load cells placed under parking spots to detect vehicle presence.",
+  "Communication interface: Wi-Fi, Bluetooth",
   "Software layer: dashboard, mobile view, or web interface that displays open-space availability.",
 ];
 
@@ -53,7 +52,6 @@ export default function SolutionPage() {
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Solution Sketch</p>
-            <h2>Draft concept of the proposed system</h2>
           </div>
           <div className="solution-figure">
             <img
