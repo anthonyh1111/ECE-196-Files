@@ -12,8 +12,7 @@ export default function ProblemPage() {
           <div className="section-heading">
             <p className="section-tag">Problem Definition</p>
             <h2>
-              Student-accessible parking on the UCSD campus is not optimal for
-              the large number of students that use these parking spaces.
+            UCSD undergrad commuters struggle to know if student parking is available at Pangea parking structure. 
             </h2>
           </div>
         </section>
