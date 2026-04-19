@@ -23,7 +23,7 @@ export default function ProblemPage() {
             <h2>Why this matters to the team</h2>
           </div>
           <p>
-            Anthony and Alex consistently park at Pangea parking structure and have to continuously circle around looking for open S spots, causing us to waste time or be late to class. As a last resort, we may have to park in Student-Resident spots, risking a $85 ticket. 
+            Anthony and Alex consistently park at Pangea parking structure during the morning / afternoon time and have to continuously circle around looking for open S spots, causing us to waste time or be late to class. As a last resort, we may have to park in Student-Resident spots, risking a $85 ticket. 
           </p>
         </section>
 

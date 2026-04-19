@@ -45,7 +45,7 @@ export default function SolutionPage() {
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Your Solution</p>
-            <h2>Smart parking availability system for Pangea parking structure</h2>
+            <h2>Real-time parking occupancy dectection system for Pangea parking structure</h2>
           </div>
         </section>
 
