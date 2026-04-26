@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 const solutionActions = [
-  "Use weight sensors to detect if a car is in a parking spot.",
+  "Use a time of flight distance sensors to detect if a car is in a parking spot.",
   "Microcontroller/ESP32 will be used to communicate with our database and notify users via Discord or Telegram.",
   "Firebase will be our database to keep track of parking spots status.",
 ];
@@ -18,7 +18,7 @@ const technicalAspects = [
 
 const components = [
   "Microcontroller: ESP32",
-  "Weight Sensors: Pressure pads or load cells placed under parking spots to detect vehicle presence.",
+  "Distance Sensors: Using time of flight sensors vl53L1X to detect distance",
   "Communication interface: Wi-Fi, Bluetooth",
   "Software layer: dashboard, mobile view, or web interface that displays open-space availability.",
 ];
@@ -26,11 +26,11 @@ const components = [
 const milestones = [
   {
     date: "May 1, 2026",
-    item: "Parking garage model is fully constructed with Lego and 3D-printed parts.",
+    item: "Parking garage model is fully constructed and 3D-printed",
   },
   {
     date: "May 8, 2026",
-    item: "Weight sensor detects a car and sends occupancy data through the microcontroller.",
+    item: "Distance sensor detects a car and sends occupancy data through the microcontroller.",
   },
   {
     date: "May 20, 2026",
@@ -109,7 +109,7 @@ export default function SolutionPage() {
           </div>
           <p className="figure-note">
             Overall solution block diagram showing the model parking garage,
-            weight sensors, ESP32 microcontroller, Firebase database, and
+            distance sensors, ESP32 microcontroller, Firebase database, and
             Discord or Telegram notifications.
           </p>
         </section>
@@ -141,7 +141,7 @@ export default function SolutionPage() {
             />
           </div>
           <p className="figure-note">
-            Timeline of garage-model construction, weight-sensor detection with
+            Timeline of garage-model construction, distance sensor detection with
             microcontroller communication, and user notification of open spots.
           </p>
         </section>
