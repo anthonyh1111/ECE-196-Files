@@ -38,6 +38,27 @@ const milestones = [
   },
 ];
 
+const pcbFigures = [
+  {
+    title: "PCB schematic",
+    src: "/SolutionPhotos/PCBSchem.png",
+    alt: "PCB schematic for the smart parking system",
+    description: "Circuit schematic for the PCB design.",
+  },
+  {
+    title: "PCB design",
+    src: "/SolutionPhotos/PCBDesign.png",
+    alt: "PCB layout design for the smart parking system",
+    description: "Board layout showing the PCB routing and component placement.",
+  },
+  {
+    title: "PCB 3D view",
+    src: "/SolutionPhotos/PCB3D.png",
+    alt: "3D view of the PCB for the smart parking system",
+    description: "Three-dimensional render of the completed PCB.",
+  },
+];
+
 export default function SolutionPage() {
   return (
     <SiteShell>
@@ -144,6 +165,39 @@ export default function SolutionPage() {
             Timeline of garage-model construction, distance sensor detection with
             microcontroller communication, and user notification of open spots.
           </p>
+        </section>
+
+        <section className="content-card">
+          <div className="section-heading">
+            <p className="section-tag">CAD Design</p>
+            <h2>Parking garage CAD placeholder</h2>
+          </div>
+          <div className="placeholder-figure">
+            <div>
+              <h3>CAD model coming soon</h3>
+              <p>
+                This section can hold a render or screenshot of the parking
+                garage CAD design once it is ready.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="content-card">
+          <div className="section-heading">
+            <p className="section-tag">PCB Section</p>
+          </div>
+          <div className="page-stack">
+            {pcbFigures.map((figure) => (
+              <div key={figure.title}>
+                <h3>{figure.title}</h3>
+                <div className="solution-figure">
+                  <img src={figure.src} alt={figure.alt} />
+                </div>
+                <p className="figure-note">{figure.description}</p>
+              </div>
+            ))}
+          </div>
         </section>
       </main>
     </SiteShell>

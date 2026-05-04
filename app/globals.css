@@ -181,6 +181,10 @@ li {
   margin-top: 26px;
 }
 
+.centered-actions {
+  justify-content: center;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
