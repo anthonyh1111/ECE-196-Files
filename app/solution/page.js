@@ -25,17 +25,21 @@ const components = [
 
 const milestones = [
   {
-    date: "May 1, 2026",
-    item: "Parking garage model is fully constructed and 3D-printed",
+    date: "May 11, 2026",
+    item: "Parking garage CAD model should be finished and ready to print",
   },
   {
-    date: "May 8, 2026",
-    item: "Distance sensor detects a car and sends occupancy data through the microcontroller.",
+    date: "May 18, 2026",
+    item: "PCB should be fully assembled and ready to be coded",
   },
   {
-    date: "May 20, 2026",
-    item: "System notifies a user which parking spots are open through the software interface.",
+    date: "May 22, 2026",
+    item: "App should be fully implemented and update users on open parking spots",
   },
+  {
+    date: "May 29, 2026",
+    item: "Video demo should be recorded and edited, and poster should be finalized for presentation",
+  }
 ];
 
 const pcbFigures = [
