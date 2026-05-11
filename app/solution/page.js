@@ -177,14 +177,12 @@ export default function SolutionPage() {
             <h2>Parking garage CAD placeholder</h2>
           </div>
           <div className="placeholder-figure">
-            <div>
-              <h3>CAD model coming soon</h3>
-              <p>
-                This section can hold a render or screenshot of the parking
-                garage CAD design once it is ready.
-              </p>
+              <img
+                src="/SolutionPhotos/CADModel-Parking_Garage.png"
+                alt="CAD model for the smart parking garage system"
+                className="section-image"
+              />
             </div>
-          </div>
         </section>
 
         <section className="content-card">
