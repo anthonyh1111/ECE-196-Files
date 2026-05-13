@@ -12,7 +12,7 @@ export default function ProblemPage() {
           <div className="section-heading">
             <p className="section-tag">Problem Definition</p>
             <h2>
-            UCSD undergrad commuters struggle to know if student parking is available at Pangea parking structure during the afternoon time. 
+            UCSD undergrad commuters struggle to know if student parking is available at the Pangea parking structure. 
             </h2>
           </div>
         </section>

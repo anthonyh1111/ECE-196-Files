@@ -25,20 +25,27 @@ const components = [
 
 const milestones = [
   {
-    date: "May 11, 2026",
-    item: "Parking garage CAD model should be finished and ready to print",
+    date: "May 13, 2026",
+    item: "Our smaller parking garage model and sensor enclosure will be fully designed on CAD and 3D Printed. PCB will have been fully designed and ordered with improvements like portability and sensor compatibility.  ",
   },
   {
     date: "May 18, 2026",
-    item: "PCB should be fully assembled and ready to be coded",
+    item: "PCB Components will be soldered on and our parking garage will be 'decorated' with appropriate lanes for car parking, exterior colored, and have sensor mounting spaces.  "
+
   },
+
+
   {
     date: "May 22, 2026",
-    item: "App should be fully implemented and update users on open parking spots",
+    item: "The sensor enclosure will be mounted onto our smaller parking garage model. Sensor will now be in the testing stage and will account for noise, outside variables, and will work properly as a car sensor. ",
+  },
+  {
+    date: "May 25, 2026",
+    item: "Sensor will now work correctly, noise and outside variables will be accounted for, and code will be coherent with it's functionality. The app connecting the sensor and outside users will be completed and will be able to update users on specific available parking spaces.  ",
   },
   {
     date: "May 29, 2026",
-    item: "Video demo should be recorded and edited, and poster should be finalized for presentation",
+    item: "Video demo will be recorded and edited, and poster should be finalized for presentation. The model, poster, and video will also be double checked for any changes that could be made to ensure the quality of our presentation. ",
   }
 ];
 
