@@ -24,16 +24,29 @@ const components = [
 ];
 
 const milestones = [
+    {
+    date: "May 4, 2026",
+    item: [ " Finish up brainstorming ideas for our pressure-pad based sensor and updating our website proposal.  ",
+
+    "UPDATE: We ended up pivoting from this idea because it wasn't realistic to incorporate into modern parking garages. A pressure-pad based sensor would prove inefficient and would be incredibly difficult to implement.  ",
+    ]
+  },
+
   {
     date: "May 13, 2026",
-    item: "Our smaller parking garage model and sensor enclosure will be fully designed on CAD and 3D Printed. PCB will have been fully designed and ordered with improvements like portability and sensor compatibility.  ",
+    item: [ "Our smaller parking garage model and sensor enclosure will be fully designed on CAD and 3D Printed. PCB will have been fully designed and ordered with improvements like portability and sensor compatibility.  ",
+
+    "CHALLENGES: We ran into issues with the time it took to print the CAD model and sizing constraints as the plate wasn't large enough to fit the size of garage we needed. We compromised by printing out multiple pieces to a larger model. ",
+    ]
   },
   {
     date: "May 18, 2026",
-    item: "PCB Components will be soldered on and our parking garage will be 'decorated' with appropriate lanes for car parking, exterior colored, and have sensor mounting spaces.  "
-
+    item: [ "PCB Components will be soldered on and our parking garage will be 'decorated' with appropriate lanes for car parking, exterior colored, and have sensor mounting spaces.  ",
+    
+    "CHALLENGES: We incorrectly ordered some of the parts on the PCB and had to find replacement parts. Since the replacement parts weren't identical we had to jumper wire the connections. ", 
+    
+    ]
   },
-
 
   {
     date: "May 22, 2026",
@@ -77,7 +90,7 @@ export default function SolutionPage() {
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Your Solution</p>
-            <h2>Real-time parking occupancy dectection system for Pangea parking structure</h2>
+            <h2> Enhanced Real-Time undergraduate student parking occupancy detection system. </h2>
           </div>
         </section>
 

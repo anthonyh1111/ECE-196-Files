@@ -12,7 +12,7 @@ export default function ProblemPage() {
           <div className="section-heading">
             <p className="section-tag">Problem Definition</p>
             <h2>
-            UCSD undergrad commuters struggle to know if student parking is available at the Pangea parking structure. 
+            UCSD student accessible parking is not properly facilitated by notifying apps like the UC San Diego parking spot app tracker thus leading to undergraduate commuters struggling to know if student parking is available. 
             </h2>
           </div>
         </section>
@@ -23,7 +23,7 @@ export default function ProblemPage() {
             <h2>Why this matters to the team</h2>
           </div>
           <p>
-            Anthony and Alex consistently park at Pangea parking structure during the morning / afternoon time and have to continuously circle around looking for open S spots, causing us to waste time or be late to class. As a last resort, we may have to park in Student-Resident spots, risking a $85 ticket. 
+            Our motivation stems from experienced frustrations during time constrainted moments in our desperate search for a parking spot, especially in the mornings and afternoons. The built-in parking spot detector in the UC San Diego app doesn't benefit undergraduate student commuters such as us and the inconsistency and time wasted looking for a parking spot is extremely frustrating. We hope to innovate a solution to our relevant problem. 
           </p>
         </section>
 
