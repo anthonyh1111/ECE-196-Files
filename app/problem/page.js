@@ -15,6 +15,25 @@ export default function ProblemPage() {
             UCSD student accessible parking is not properly facilitated by notifying apps like the UC San Diego parking spot app tracker thus leading to undergraduate commuters struggling to know if student parking is available. 
             </h2>
           </div>
+          <div className="problem-gallery">
+            <p className="problem-gallery-label">Current UCSD App</p>
+            <img
+              src="/SolutionPhotos/UCSDapp1.jpg"
+              alt="UC San Diego parking app screenshot 1"
+            />
+            <img
+              src="/SolutionPhotos/UCSDapp2.jpg"
+              alt="UC San Diego parking app screenshot 2"
+            />
+            <img
+              src="/SolutionPhotos/UCSDapp3.jpg"
+              alt="UC San Diego parking app screenshot 3"
+            />
+            <img
+              src="/SolutionPhotos/UCSDapp4.jpg"
+              alt="UC San Diego parking app screenshot 4"
+            />
+          </div>
         </section>
 
         <section className="content-card">

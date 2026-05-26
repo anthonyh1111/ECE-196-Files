@@ -23,45 +23,6 @@ const components = [
   "Software layer: dashboard, mobile view, or web interface that displays open-space availability.",
 ];
 
-const milestones = [
-    {
-    date: "May 4, 2026",
-    item: [ " Finish up brainstorming ideas for our pressure-pad based sensor and updating our website proposal.  ",
-
-    "UPDATE: We ended up pivoting from this idea because it wasn't realistic to incorporate into modern parking garages. A pressure-pad based sensor would prove inefficient and would be incredibly difficult to implement.  ",
-    ]
-  },
-
-  {
-    date: "May 13, 2026",
-    item: [ "Our smaller parking garage model and sensor enclosure will be fully designed on CAD and 3D Printed. PCB will have been fully designed and ordered with improvements like portability and sensor compatibility.  ",
-
-    "CHALLENGES: We ran into issues with the time it took to print the CAD model and sizing constraints as the plate wasn't large enough to fit the size of garage we needed. We compromised by printing out multiple pieces to a larger model. ",
-    ]
-  },
-  {
-    date: "May 18, 2026",
-    item: [ "PCB Components will be soldered on and our parking garage will be 'decorated' with appropriate lanes for car parking, exterior colored, and have sensor mounting spaces.  ",
-    
-    "CHALLENGES: We incorrectly ordered some of the parts on the PCB and had to find replacement parts. Since the replacement parts weren't identical we had to jumper wire the connections. ", 
-    
-    ]
-  },
-
-  {
-    date: "May 22, 2026",
-    item: "The sensor enclosure will be mounted onto our smaller parking garage model. Sensor will now be in the testing stage and will account for noise, outside variables, and will work properly as a car sensor. ",
-  },
-  {
-    date: "May 25, 2026",
-    item: "Sensor will now work correctly, noise and outside variables will be accounted for, and code will be coherent with it's functionality. The app connecting the sensor and outside users will be completed and will be able to update users on specific available parking spaces.  ",
-  },
-  {
-    date: "May 29, 2026",
-    item: "Video demo will be recorded and edited, and poster should be finalized for presentation. The model, poster, and video will also be double checked for any changes that could be made to ensure the quality of our presentation. ",
-  }
-];
-
 const pcbFigures = [
   {
     title: "PCB schematic",
@@ -90,7 +51,7 @@ export default function SolutionPage() {
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Your Solution</p>
-            <h2> Enhanced Real-Time undergraduate student parking occupancy detection system. </h2>
+            <h2> Real-Time undergraduate student parking occupancy detection system. </h2>
           </div>
         </section>
 
@@ -98,10 +59,10 @@ export default function SolutionPage() {
           <div className="section-heading">
             <p className="section-tag">Solution Sketch</p>
           </div>
-          <div className="solution-figure">
+          <div className="solution-figure model-figure">
             <img
-              src="/SolutionPhotos/ConceptSketch.png"
-              alt="Solution sketch for the smart parking garage system"
+              src="/SolutionPhotos/Model.png"
+              alt="Model for the smart parking garage system"
             />
           </div>
           <p className="figure-note">
@@ -115,11 +76,16 @@ export default function SolutionPage() {
             <p className="section-tag">What The Technology Will Do</p>
             <h2>Solution behavior</h2>
           </div>
-          <ul className="detail-list">
-            {solutionActions.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+          <div className="solution-figure">
+            <img
+              src="/SolutionPhotos/ExampleWorkflow.png"
+              alt="Example workflow showing how the smart parking system detects occupancy and notifies users"
+            />
+          </div>
+          <p className="figure-note">
+            Example workflow illustrating how sensor data flows from detection
+            through the microcontroller and database to user notification.
+          </p>
         </section>
 
         <section className="content-card">
@@ -161,48 +127,33 @@ export default function SolutionPage() {
 
         <section className="content-card">
           <div className="section-heading">
-            <p className="section-tag">Milestones</p>
-            <h2>Specific dates tied to measurable outcomes</h2>
-          </div>
-          <div className="milestone-list">
-            {milestones.map((milestone) => (
-              <article className="milestone-card" key={milestone.date}>
-                <p className="milestone-date">{milestone.date}</p>
-                <p>{milestone.item}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="content-card">
-          <div className="section-heading">
-            <p className="section-tag">Figure Of Timeline</p>
-            <h2>Project timeline</h2>
-          </div>
-          <div className="solution-figure">
-            <img
-              src="/SolutionPhotos/TimelineFigure.png"
-              alt="Project timeline showing milestones on May 1, May 8, and May 20, 2026"
-            />
-          </div>
-          <p className="figure-note">
-            Timeline of garage-model construction, distance sensor detection with
-            microcontroller communication, and user notification of open spots.
-          </p>
-        </section>
-
-        <section className="content-card">
-          <div className="section-heading">
             <p className="section-tag">CAD Design</p>
-            <h2>Parking garage CAD placeholder</h2>
+            <h2>Parking Garage CAD Model</h2>
           </div>
           <div className="placeholder-figure">
               <img
-                src="/SolutionPhotos/CADModel-Parking_Garage.png"
+                src="/SolutionPhotos/Model3DCAD.png"
                 alt="CAD model for the smart parking garage system"
                 className="section-image"
               />
             </div>
+        </section>
+
+        <section className="content-card">
+          <div className="section-heading">
+            <p className="section-tag">App View</p>
+            <h2>Mobile app interface</h2>
+          </div>
+          <div className="solution-figure app-view-figure">
+            <img
+              src="/SolutionPhotos/AppView.png"
+              alt="Mobile app interface showing real-time parking spot availability"
+            />
+          </div>
+          <p className="figure-note">
+            The mobile app displays live occupancy status for each parking spot,
+            updated in real time from the Firebase database.
+          </p>
         </section>
 
         <section className="content-card">
@@ -213,12 +164,31 @@ export default function SolutionPage() {
             {pcbFigures.map((figure) => (
               <div key={figure.title}>
                 <h3>{figure.title}</h3>
-                <div className="solution-figure">
+                <div
+                  className={`solution-figure pcb-figure${
+                    figure.title === "PCB design" ? " pcb-figure-design" : ""
+                  }`}
+                >
                   <img src={figure.src} alt={figure.alt} />
                 </div>
                 <p className="figure-note">{figure.description}</p>
               </div>
             ))}
+          </div>
+        </section>
+        <section className="content-card">
+          <div className="section-heading">
+            <p className="section-tag">Final Product</p>
+            <h2>Completed smart parking system</h2>
+          </div>
+          <div className="placeholder-figure">
+            <div>
+              <h3>Final product photos coming soon</h3>
+              <p>
+                Photos and a description of the assembled parking garage model,
+                mounted sensors, and working system will be added here.
+              </p>
+            </div>
           </div>
         </section>
       </main>
