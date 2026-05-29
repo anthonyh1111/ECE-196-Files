@@ -18,17 +18,16 @@ export default function SiteHeader() {
   return (
     <header className="topbar">
       <div className="brand-group">
-        <Link className="brand" href="/">
-          ECE 196
+        <Link className="brand-logo" href="/">
+          <img
+            src="/SolutionPhotos/logo.png"
+            alt="APA Smart Parking Logo"
+          />
         </Link>
         <div className="topbar-logos">
           <img
             src="/SolutionPhotos/UCSDJacobsLogo.png"
             alt="UC San Diego Jacobs School of Engineering logo"
-          />
-          <img
-            src="/SolutionPhotos/logo.png"
-            alt="Project logo for the ECE196 smart parking system"
           />
         </div>
       </div>

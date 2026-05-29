@@ -101,6 +101,13 @@ h3 {
   letter-spacing: 0.04em;
 }
 
+.brand-logo img {
+  height: 80px;   
+  width: auto;
+  gap: 10px;
+  object-fit: contain;
+}
+
 .topbar-logos {
   display: flex;
   align-items: center;
