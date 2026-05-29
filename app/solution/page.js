@@ -42,6 +42,12 @@ const pcbFigures = [
     alt: "3D view of the PCB for the smart parking system",
     description: "Three-dimensional render of the completed PCB.",
   },
+  {
+    title: "Assembled PCB",
+    src: "/SolutionPhotos/AssembledPCB.png",
+    alt: "Assembled PCB for the smart parking system",
+    description: "Physical assembled PCB with components soldered onto the board.",
+  },
 ];
 
 export default function SolutionPage() {
@@ -52,6 +58,13 @@ export default function SolutionPage() {
           <div className="section-heading">
             <p className="section-tag">Your Solution</p>
             <h2> Real-Time undergraduate student parking occupancy detection system. </h2>
+          </div>
+        </section>
+
+        <section className="content-card">
+          <div className="section-heading">
+            <p className="section-tag">Testable Hypothesis</p>
+            <h2>Our system can detect when a car drives or leaves a parking spot and this information is relayed to users via our mobile app in less than 15 seconds by giving them a notification that the spot is available.</h2>
           </div>
         </section>
 
@@ -141,6 +154,30 @@ export default function SolutionPage() {
 
         <section className="content-card">
           <div className="section-heading">
+            <p className="section-tag">PCB Section</p>
+          </div>
+          <div className="page-stack">
+            {pcbFigures.map((figure) => (
+              <div key={figure.title}>
+                <h3>{figure.title}</h3>
+                <div
+                  className={`solution-figure pcb-figure${
+                    figure.title === "PCB design" ? " pcb-figure-design" : ""
+                  }${
+                    figure.title === "Assembled PCB"
+                      ? " assembled-pcb-figure"
+                      : ""
+                  }`}
+                >
+                  <img src={figure.src} alt={figure.alt} />
+                </div>
+                <p className="figure-note">{figure.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="content-card">
+          <div className="section-heading">
             <p className="section-tag">App View</p>
             <h2>Mobile app interface</h2>
           </div>
@@ -154,27 +191,6 @@ export default function SolutionPage() {
             The mobile app displays live occupancy status for each parking spot,
             updated in real time from the Firebase database.
           </p>
-        </section>
-
-        <section className="content-card">
-          <div className="section-heading">
-            <p className="section-tag">PCB Section</p>
-          </div>
-          <div className="page-stack">
-            {pcbFigures.map((figure) => (
-              <div key={figure.title}>
-                <h3>{figure.title}</h3>
-                <div
-                  className={`solution-figure pcb-figure${
-                    figure.title === "PCB design" ? " pcb-figure-design" : ""
-                  }`}
-                >
-                  <img src={figure.src} alt={figure.alt} />
-                </div>
-                <p className="figure-note">{figure.description}</p>
-              </div>
-            ))}
-          </div>
         </section>
         <section className="content-card">
           <div className="section-heading">
@@ -190,6 +206,21 @@ export default function SolutionPage() {
               </p>
             </div>
           </div>
+        </section>
+        <section className="content-card">
+          <div className="section-heading">
+            <h2>Working system demonstration</h2>
+          </div>
+          <div className="solution-figure completed-system-figure">
+            <img
+              src="/SolutionPhotos/CompletedSystem.gif"
+              alt="GIF showing the completed smart parking system in operation"
+            />
+          </div>
+          <p className="figure-note">
+            Animated demonstration of the completed system detecting parking spot
+            occupancy and updating the user-facing view.
+          </p>
         </section>
       </main>
     </SiteShell>
