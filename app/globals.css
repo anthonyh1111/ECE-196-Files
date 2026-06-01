@@ -364,12 +364,17 @@ li {
 }
 
 .model-figure {
-  max-width: 560px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
 .pcb-figure {
   max-width: 720px;
+  margin: 0 auto;
+}
+
+.block-diagram-figure {
+  max-width: 580px;
   margin: 0 auto;
 }
 
@@ -388,6 +393,33 @@ li {
   margin: 0 auto;
 }
 
+.final-model-figure {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.final-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+  align-items: start;
+}
+
+.final-product-grid h3 {
+  text-align: center;
+}
+
+.final-product-figure {
+  aspect-ratio: 1;
+}
+
+.final-product-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .figure-note {
   margin-top: 14px;
   color: var(--accent-dark);
@@ -396,11 +428,24 @@ li {
 
 .milestone-list {
   display: grid;
-  gap: 14px;
+  gap: 34px;
 }
 
 .milestone-card {
+  position: relative;
   padding: 20px 22px;
+}
+
+.milestone-card:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  color: var(--accent-dark);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .milestone-date {
@@ -413,6 +458,11 @@ li {
 .milestone-points {
   margin: 0;
   padding-left: 20px;
+}
+
+.milestone-card p,
+.milestone-points li {
+  font-size: 1.08rem;
 }
 
 .solution-card {
@@ -501,7 +551,8 @@ li {
   .solutions-grid,
   .team-grid,
   .resource-grid,
-  .mini-grid {
+  .mini-grid,
+  .final-product-grid {
     grid-template-columns: 1fr;
   }
 

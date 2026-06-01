@@ -64,7 +64,7 @@ export default function SolutionPage() {
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Testable Hypothesis</p>
-            <h2>Our system can detect when a car drives or leaves a parking spot and this information is relayed to users via our mobile app in less than 15 seconds by giving them a notification that the spot is available.</h2>
+            <h2>Our system detects parking spot changes and notifies users through the mobile app within 15 seconds.</h2>
           </div>
         </section>
 
@@ -83,49 +83,12 @@ export default function SolutionPage() {
             hardware pieces fit together.
           </p>
         </section>
-
-        <section className="content-card">
-          <div className="section-heading">
-            <p className="section-tag">What The Technology Will Do</p>
-            <h2>Solution behavior</h2>
-          </div>
-          <div className="solution-figure">
-            <img
-              src="/SolutionPhotos/ExampleWorkflow.png"
-              alt="Example workflow showing how the smart parking system detects occupancy and notifies users"
-            />
-          </div>
-          <p className="figure-note">
-            Example workflow illustrating how sensor data flows from detection
-            through the microcontroller and database to user notification.
-          </p>
-        </section>
-
-        <section className="content-card">
-          <div className="section-heading">
-            <p className="section-tag">Technological Aspects</p>
-            <h2>Key technical elements of the design</h2>
-          </div>
-          <ul className="detail-list">
-            {technicalAspects.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <div className="mini-grid">
-            {components.map((item) => (
-              <article className="mini-card" key={item}>
-                <p>{item}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Block Diagram Of Technology</p>
             <h2>Overall system architecture</h2>
           </div>
-          <div className="solution-figure">
+          <div className="solution-figure block-diagram-figure">
             <img
               src="/SolutionPhotos/BlockDiagram.png"
               alt="Smart parking garage block diagram with sensors, ESP32, Firebase, and notification software"
@@ -194,16 +157,54 @@ export default function SolutionPage() {
         </section>
         <section className="content-card">
           <div className="section-heading">
+            <p className="section-tag">Software Block Diagram</p>
+            <h2>Software system architecture</h2>
+          </div>
+          <div className="solution-figure">
+            <img
+              src="/SolutionPhotos/SoftwareBlockDiagram.png"
+              alt="Software block diagram showing how the smart parking system app, database, ESP32 updates, and notification logic connect"
+            />
+          </div>
+          <p className="figure-note">
+            Software block diagram showing the data flow between the parking
+            system hardware, Firebase database, mobile app, and notification
+            logic.
+          </p>
+        </section>
+        <section className="content-card">
+          <div className="section-heading">
             <p className="section-tag">Final Product</p>
             <h2>Completed smart parking system</h2>
           </div>
-          <div className="placeholder-figure">
+          <div className="solution-figure final-model-figure">
+            <img
+              src="/SolutionPhotos/FullModel.jpg"
+              alt="Completed smart parking system model with the garage, sensors, and electronics installed"
+            />
+          </div>
+          <p className="figure-note">
+            Completed parking garage model with the sensing and control hardware
+            integrated into the physical system.
+          </p>
+          <div className="final-product-grid">
             <div>
-              <h3>Final product photos coming soon</h3>
-              <p>
-                Photos and a description of the assembled parking garage model,
-                mounted sensors, and working system will be added here.
-              </p>
+              <h3>Mounted PCB sensor</h3>
+              <div className="solution-figure final-product-figure">
+                <img
+                  src="/SolutionPhotos/PCBSensor.jpg"
+                  alt="PCB sensor mounted inside the completed smart parking system"
+                />
+              </div>
+            </div>
+            <div>
+              <h3>Final PCB</h3>
+              <div className="solution-figure final-product-figure">
+                <img
+                  src="/SolutionPhotos/FinalPCB.jpg"
+                  alt="Final PCB used in the completed smart parking system"
+                />
+              </div>
             </div>
           </div>
         </section>

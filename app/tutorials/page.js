@@ -31,6 +31,18 @@ const references = [
     description:
       "Included basics of setting up a firebase realtime database and connecting it to an ESP32 microcontroller and gave starter code for reading/writing data.",
     href: "https://randomnerdtutorials.com/esp32-firebase-realtime-database/",
+  },
+  {
+    title: "Physical Computing Lesson 1: Smoothing Input",
+    description:
+      "This tutorial from the ECE 196 course website covers techniques for smoothing input data from sensors, which is relevant for our project to ensure accurate occupancy detection.",
+    href: "https://makeabilitylab.github.io/physcomp/advancedio/smoothing-input.html?utm_source=chatgpt.com"
+  },
+  {
+    title: "RoboJax: Arduino code for VL53L1X Time-of-Flight 400cm Laser distance sensor",
+    description:
+      "This tutorial provides Arduino code for interfacing with the VL53L1X time-of-flight sensor, useful for our parking occupancy detection project.",
+    href: "https://www.youtube.com/watch?v=Sc_iVfeocvg&t=734s"
   }
 ];
 
