@@ -208,21 +208,6 @@ export default function SolutionPage() {
             </div>
           </div>
         </section>
-        <section className="content-card">
-          <div className="section-heading">
-            <h2>Working system demonstration</h2>
-          </div>
-          <div className="solution-figure completed-system-figure">
-            <img
-              src="/SolutionPhotos/CompletedSystem.gif"
-              alt="GIF showing the completed smart parking system in operation"
-            />
-          </div>
-          <p className="figure-note">
-            Animated demonstration of the completed system detecting parking spot
-            occupancy and updating the user-facing view.
-          </p>
-        </section>
       </main>
     </SiteShell>
   );

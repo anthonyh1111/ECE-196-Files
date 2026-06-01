@@ -60,7 +60,7 @@ export default function HomePage() {
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Project Demo</p>
-            <h2>Video demo placeholder</h2>
+            <h2>Video demo</h2>
           </div>
           <div className="placeholder-figure">
             <div>
@@ -85,7 +85,7 @@ export default function HomePage() {
         <section className="content-card">
           <div className="section-heading">
             <p className="section-tag">Project Poster</p>
-            <h2>Poster placeholder</h2>
+            <h2>Poster</h2>
           </div>
           <div className="placeholder-figure">
             <div>
