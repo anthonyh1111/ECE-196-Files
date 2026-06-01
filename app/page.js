@@ -62,23 +62,15 @@ export default function HomePage() {
             <p className="section-tag">Project Demo</p>
             <h2>Video demo</h2>
           </div>
-          <div className="placeholder-figure">
-            <div>
-              <h3>Video ideas document</h3>
-              <p>
-                Open the shared planning doc for demo ideas and video structure.
-              </p>
-              <div className="hero-actions centered-actions">
-                <a
-                  className="button button-primary"
-                  href="https://docs.google.com/document/d/1Mh3toYE-9V56sv-izEsubGuJz7E74g70UgYrZhKT3jQ/edit?usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open Video Ideas
-                </a>
-              </div>
-            </div>
+          <div className="hero-actions">
+            <a
+              className="button button-primary"
+              href="https://docs.google.com/document/d/1Mh3toYE-9V56sv-izEsubGuJz7E74g70UgYrZhKT3jQ/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Go to Video
+            </a>
           </div>
         </section>
 
