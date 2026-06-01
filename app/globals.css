@@ -406,6 +406,27 @@ li {
   align-items: start;
 }
 
+.pcb-enclosure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.pcb-enclosure-grid h3 {
+  text-align: center;
+}
+
+.pcb-enclosure-figure {
+  aspect-ratio: 4 / 3;
+}
+
+.pcb-enclosure-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .final-product-grid h3 {
   text-align: center;
 }
@@ -552,7 +573,8 @@ li {
   .team-grid,
   .resource-grid,
   .mini-grid,
-  .final-product-grid {
+  .final-product-grid,
+  .pcb-enclosure-grid {
     grid-template-columns: 1fr;
   }
 

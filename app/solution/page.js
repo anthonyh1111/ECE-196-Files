@@ -44,6 +44,19 @@ const pcbFigures = [
   },
 ];
 
+const pcbEnclosureFigures = [
+  {
+    title: "Open enclosure",
+    src: "/SolutionPhotos/PCBEnclosureOpen.png",
+    alt: "Open PCB enclosure for the smart parking system",
+  },
+  {
+    title: "Closed enclosure",
+    src: "/SolutionPhotos/PCBEnclosureClosed.png",
+    alt: "Closed PCB enclosure for the smart parking system",
+  },
+];
+
 export default function SolutionPage() {
   return (
     <SiteShell>
@@ -107,6 +120,22 @@ export default function SolutionPage() {
                 className="section-image"
               />
             </div>
+        </section>
+
+        <section className="content-card">
+          <div className="section-heading">
+            <p className="section-tag">PCB Enslosure</p>
+          </div>
+          <div className="pcb-enclosure-grid">
+            {pcbEnclosureFigures.map((figure) => (
+              <div key={figure.title}>
+                <h3>{figure.title}</h3>
+                <div className="solution-figure pcb-enclosure-figure">
+                  <img src={figure.src} alt={figure.alt} />
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="content-card">
