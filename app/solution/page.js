@@ -37,12 +37,6 @@ const pcbFigures = [
     description: "Board layout showing the PCB routing and component placement.",
   },
   {
-    title: "PCB 3D view",
-    src: "/SolutionPhotos/PCB3D.png",
-    alt: "3D view of the PCB for the smart parking system",
-    description: "Three-dimensional render of the completed PCB.",
-  },
-  {
     title: "Assembled PCB",
     src: "/SolutionPhotos/AssembledPCB.png",
     alt: "Assembled PCB for the smart parking system",
