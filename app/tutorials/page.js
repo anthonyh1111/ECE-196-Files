@@ -21,7 +21,7 @@ const tutorials = [
     title: "Physics behind a time-of-flight distance sensor",
     description:
       "Understand the underlying principles of how time-of-flight sensors work and their applications in distance measurement.",
-    href: "https://firebase.google.com/docs/database/web/start",
+    href: "https://drive.google.com/file/d/1Z8OudJXa25IFCAolQAdjsOePYUFfAeeY/view?usp=sharing",
   },
 ];
 
